@@ -1,0 +1,139 @@
+/* Custom HTML tags */
+body {
+	background: url("/images/background-workplace.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-size: cover;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* Other Custom */
+.wrapper {
+	height: 100%;
+}
+
+.workspace-container {
+	display: flex;
+	padding: 20px;
+}
+
+.schedule-info {
+	width: 250px;
+	height: 350px;
+	background: #fff;
+	border-radius: 0.4rem;
+	padding: 20px;
+}
+
+.todos > .todo-item {
+	list-style: none;
+	width: 100%;
+	padding: 5px;
+	background: #fff;
+	margin-bottom: .5rem;
+	border-radius: .5rem;
+}
+
+.todos > .todo-item:last-child {
+	margin-bottom: 0px;
+}
+
+.todos > .todo-item:hover {
+	background: #283747;
+	color: #fff;
+	user-select: none;
+	cursor: pointer;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.todos {
+	padding-left: 0;
+	margin-bottom: 0.75rem;
+	max-height: 300px;
+	overflow: auto;
+}
+
+.bt-light-purple {
+	border-top: 0.4rem solid #B39DDB;
+}
+
+.bt-light-green {
+	border-top: 0.4rem solid #81C784;
+}
+
+.card {
+	margin: 5px;
+	border-radius: .5rem;
+}
+
+.card-body {
+	background: #D0D3D4;
+	padding: 5px;
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+}
+
+.card-composer-container {
+	text-align: center;
+	padding: 5px;
+	user-select: none;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+
+.card-composer-container:hover {
+	background: #B0BEC5;
+}
+
+.card-composer-container a {
+	color: black;
+}
+
+.card-composer-container a:hover {
+	text-decoration: none;
+}
+
+.hide {
+	display: none;
+}
+
+
+#schedule-nav {
+	align-items: center;
+}
+
+#schedule-nav * {
+	color: white;
+}
+
+.schedule-action {
+	display: flex;
+	padding-left: 0;
+	margin-bottom: auto;
+}
+
+.schedule-action > .action-item {
+	margin: 3px;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  	width: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #F2F4F4;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}
+ 
+::-webkit-scrollbar-thumb {
+  	background: #263238;
+    border: 5px solid transparent;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}

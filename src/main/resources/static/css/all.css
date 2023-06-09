@@ -1,0 +1,79 @@
+/* Custom HTML tags */
+p {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+
+a {
+	font-size: 1rem;
+}
+
+small{
+	font-size: 0.8rem;
+}
+
+/* Custom class */
+.notification-container {
+	position: relative;
+}
+
+.notification-container i {
+	font-size: 15pt;
+}
+
+.notification-body {
+	right: 10px;
+	position: absolute;
+	width: 340px;
+	height: auto;
+	background: #FFFFFF;
+	z-index: 999;
+	display: none;
+	border: solid 1px #ddd;
+}
+
+.notification-body-header {
+	padding: 6px;
+	background: #FAFAFA;
+	border-bottom: solid 1px #ddd;
+}
+
+.notification-list {
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.notification-list > .notification-item {
+	border-bottom: 1px solid #ddd;
+	padding: 6px;
+}
+
+.notification-item  a.notification-link {
+	color: black;
+}
+
+.notification-item  a.notification-link:hover {
+	text-decoration: none;
+}
+
+.notification-item:not(.disabled):hover {
+	background: #ddd;
+}
+
+.notification-container:hover > .notification-body {
+	display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

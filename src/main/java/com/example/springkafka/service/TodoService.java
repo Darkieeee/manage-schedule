@@ -16,12 +16,21 @@ public class TodoService {
         return todoRepository.findAll();
     }
 
+    public List<Todo> getTodos(int scheduleId) {
+        return todoRepository.findByScheduleId(scheduleId);
+    }
+
+
     public Todo getTodo(int id) {
         return todoRepository.findById(id).orElse(null);
     }
 
     public List<Todo> getTodo(String title) {
         return todoRepository.findByTitle(title);
+    }
+
+    public Todo addTodo(Todo todo) {
+        return todoRepository.save(todo);
     }
 
     public Todo updateTodo(Todo todo) {
